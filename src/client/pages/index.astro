@@ -1,5 +1,7 @@
 ---
-import Hello from "../components/Hello.astro";
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
+import { Signup } from "../components/Signup.tsx";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +9,22 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <Hello />
+  <Hero />
+  <div class="flex justify-center p-4">
+    <Signup />
+  </div>
+  <div class="space-y-6 p-4 md:flex md:gap-4 md:space-y-0 lg:justify-center">
+    <Card
+      title="Get Interview Ready"
+      description="Need to brush up on your JavaScript skills for an interview? This fast paced code kata platform will get you ready in no time."
+    />
+    <Card
+      title="Review AI Slop Faster"
+      description="Spending too much time reading AI generated code? This platform will teach you the ins and outs of JavaSript so you know when AI has made a mistake."
+    />
+    <Card
+      title="Code Faster"
+      description="Build muscle memory so you can code faster without draining your metal energy."
+    />
+  </div>
 </Layout>
