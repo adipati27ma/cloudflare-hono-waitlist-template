@@ -13,7 +13,7 @@
       "vars": {
         "ENVIRONMENT": "staging",
         "CF_ACCESS_DOMAIN": "https://adipati27ma.cloudflareaccess.com",
-        "POLICY_AUD": "ac5fd543d6061a8ebb66c0438bbf564f70a699c470927aaadf080285a069f3dd"
+        "POLICY_AUD": "feff7ba94e3807cea5d7ff31c68913f1f94bc5d92b32c3a817ebcc50a608514a"
       }
     },
     "production": {
