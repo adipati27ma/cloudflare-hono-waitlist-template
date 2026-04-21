@@ -3,5 +3,23 @@
   "name": "cloudflare-hono-waitlist-template",
   "main": "src/server/index.ts",
   // Set this to today's date
-  "compatibility_date": "2026-04-19"
+  "compatibility_date": "2026-04-19",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "env": {
+    "staging": {
+      "vars": {
+        "ENVIRONMENT": "staging",
+        "CF_ACCESS_DOMAIN": "https://adipati27ma.cloudflareaccess.com",
+        "POLICY_AUD": "ac5fd543d6061a8ebb66c0438bbf564f70a699c470927aaadf080285a069f3dd"
+      }
+    },
+    "production": {
+      "vars": {
+        "ENVIRONMENT": "production"
+      }
+    }
+  }
 }
