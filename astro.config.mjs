@@ -11,6 +11,13 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      proxy: {
+        "/api": {
+          target: "http://localhost:8787", // will prefix anything /api to the backend localhost port (local development proxy)
+        },
+      },
+    },
   },
 
   integrations: [react()],
