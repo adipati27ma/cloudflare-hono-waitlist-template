@@ -14,12 +14,26 @@
         "ENVIRONMENT": "staging",
         "CF_ACCESS_DOMAIN": "https://adipati27ma.cloudflareaccess.com",
         "POLICY_AUD": "feff7ba94e3807cea5d7ff31c68913f1f94bc5d92b32c3a817ebcc50a608514a"
-      }
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "js_dojo_staging",
+          "database_id": "1f05c898-247f-4572-89f9-256eb43ed550"
+        }
+      ]
     },
     "production": {
       "vars": {
         "ENVIRONMENT": "production"
       }
     }
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "js_dojo_local",
+      "database_id": "123"
+    }
+  ]
 }
